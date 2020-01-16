@@ -1,0 +1,7 @@
+@mixin commonprop{
+  background-color : $primary-color;
+  color : $secondary-color;
+  font-weight : bold;
+  font-size : 20px;
+}
+

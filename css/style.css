@@ -1,0 +1,38 @@
+body {
+    background-color: #d5d5d5;
+    font-weight: 700; }
+
+h1 {
+    background-color: pink;
+    color: blue;
+    font-weight: bold;
+    font-size: 20px; }
+
+a {
+    background-color: pink;
+    color: blue;
+    font-weight: bold;
+    font-size: 20px;
+    text-decoration: none; }
+
+div ul {
+    background-color: pink; }
+div ul li {
+    list-style: none;
+    color: pink;
+    display: inline-block; }
+div ul li a {
+    text-decoration: none;
+    color: pink; }
+
+.main {
+    width: 80%;
+    margin: 0 auto; }
+.main .main__paragraph, .main .second-para {
+    font-weights: 700;
+    background-color: yellow; }
+.main .main__paragraph:hover, .main .second-para:hover {
+    color: pink; }
+
+.second-para {
+    color: green; }
