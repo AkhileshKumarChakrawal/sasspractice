@@ -52,14 +52,20 @@ div{
 */
 
 @import 'variables';
+@mixin commonprop{
+  color : white;
+  text-align : center;
+}
 
 $padding : 15px;
+$border : 8px;
 @function color($color-name){
   @return map-get($colors, $color-name);
 }
 
 body{
   height : 100%;
+  width : 100%;
 
   #bg{
     clip-path : polygon(100% 0,100% 82%, 45% 100%, 0 100%, 0 0);
@@ -85,13 +91,33 @@ body{
 main{
 
   #card{
+    background-color : white;
+    text-align : center;
+    margin : $padding;
+    border-radius : $border;
     ul{
       li{
         list-style : none;
-        color : white;
+        color : black;
         padding : $padding;
       }
     }
   }
 
+  #assist{
+    @include commonprop;
+    font-size : 60px;
+    font-weight : bold;
+  }
+
+  #stuff{
+    @include commonprop;
+  }
+}
+
+footer{
+  text-align : center;
+  background-color : wheat;
+  margin : 0 480px 0;
+  border-radius : 4px;
 }
